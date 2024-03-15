@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud operations</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <form id="form">
+        <fieldset> 
+            <legend><h2>form</h2></legend>
+            <input type="text" id="name" name="name" placeholder="Name"> <br><br>
+            <input type="email" id="email" name="email" placeholder="Email"><br><br>
+            <input type="tel" id="number" name="number" placeholder="Phonenumber"><br><br>
+            <input type="button" value="submit" id="btn" onclick="Submit()">
+            <input type="reset" value="reset">
+        </fieldset>
+    </form>
+
+    <br>
+
+    <div id="msg"></div><br>
+
+    <fieldset>
+        <legend><h2>Data from local storage</h2></legend>
+        <table border="2" id="table">
+            <tr>
+                <td class="col">Name</td>
+                <td class="col">Email</td>
+                <td class="col">Phonenumber</td>
+                <td class="col">Action</td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script src="index.js"></script>
+</body>
+</html>
